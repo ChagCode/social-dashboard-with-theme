@@ -18,12 +18,41 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <div class="container">
-      Social Media Dashboard Total Followers: 23,004 Dark Mode @nathanf 1987
-      Followers 12 Today @nathanf 1044 Followers 99 Today @realnathanf 11k
-      Followers 1099 Today Nathan F. 8239 Subscribers 144 Today Overview - Today
-      Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile Views 52k 1375%
-      Retweets 117 303% Likes 507 553% Likes 107 19% Total Views 1407 12%
-    </div>
+    <header class="header container">
+      <div class="header-title">
+        <h1 class="header-title__name">Social Media Dashboard</h1>
+        <span class="header-title__total-followers"
+          >Total Followers: 23,004</span
+        >
+      </div>
+      <!-- /.header-title -->
+
+      <fieldset class="header-toggle toggle" role="radiogroup">
+        <label for="dark">Dark</label>
+        <div class="toggle__wrapper">
+          <input class="toggle__input" type="radio" name="theme" id="dark" />
+          <input
+            class="toggle__input"
+            type="radio"
+            name="theme"
+            id="system"
+            checked
+          />
+          <input class="toggle__input" type="radio" name="theme" id="light" />
+          <span aria-hidden="true" class="toggle__background"></span>
+          <span aria-hidden="true" class="toggle__button"></span>
+        </div>
+        <!-- /.toggle__wrapper -->
+        <label for="system">System</label>
+        <label for="light">Light</label>
+      </fieldset>
+    </header>
+    <main class="main container">
+      @nathanf 1987 Followers 12 Today @nathanf 1044 Followers 99 Today
+      @realnathanf 11k Followers 1099 Today Nathan F. 8239 Subscribers 144 Today
+      Overview - Today Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile
+      Views 52k 1375% Retweets 117 303% Likes 507 553% Likes 107 19% Total Views
+      1407 12%
+    </main>
   </body>
 </html>

@@ -5,11 +5,14 @@
 
 body {
   font-family: var(--font-inter);
+  background: var(--dark-bg);
+  color: var(--dark-text2);
 }
 
 .container {
   padding: 0 1.5625rem;
   max-width: 68.75rem;
+  margin: 0 auto;
 }
 
 :root {
@@ -35,4 +38,14 @@ body {
 
 :root {
   --font-inter: "Inter", serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-title__name {
+  font-size: 1.75rem;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
