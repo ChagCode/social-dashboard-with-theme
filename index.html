@@ -18,6 +18,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
+    <span class="inline-top"></span>
     <header class="header container">
       <div class="header-title">
         <h1 class="header-title__name">Social Media Dashboard</h1>
@@ -47,12 +48,313 @@
         <label for="light">Light</label>
       </fieldset>
     </header>
-    <main class="main container">
-      @nathanf 1987 Followers 12 Today @nathanf 1044 Followers 99 Today
-      @realnathanf 11k Followers 1099 Today Nathan F. 8239 Subscribers 144 Today
-      Overview - Today Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile
-      Views 52k 1375% Retweets 117 303% Likes 507 553% Likes 107 19% Total Views
-      1407 12%
+    <main class="cards container">
+      <div class="cards-top">
+        <div class="cards-item">
+          <span class="cards-inline cards-inline--facebook"></span>
+          <div class="cards-item__info">
+            <img
+              src="images/icon-facebook.svg"
+              alt="Icon: Facebook"
+              class="cards-item__icon"
+            />
+            <span class="cards-item__nickname">@nathanf</span>
+          </div>
+          <!-- /.cards-item__info -->
+          <span class="cards-item__count">1987</span>
+          <span class="cards-item__followers">Followers</span>
+          <div class="cards-item__today">
+            <img
+              src="images/icon-up.svg"
+              alt="Icon: arrow UP"
+              class="cards-item__today-icon"
+            />
+            <span class="cards-item__today-text">12 Today</span>
+          </div>
+          <!-- /.cards-item__statistic -->
+        </div>
+        <!-- /.cards-item -->
+        <div class="cards-item">
+          <span class="cards-inline cards-inline--twitter"></span>
+          <div class="cards-item__info">
+            <img
+              src="images/icon-twitter.svg"
+              alt="Icon: twitter"
+              class="cards-item__icon"
+            />
+            <span class="cards-item__nickname">@nathanf</span>
+          </div>
+          <!-- /.cards-item__info -->
+          <span class="cards-item__count">1044</span>
+          <span class="cards-item__followers">Followers</span>
+          <div class="cards-item__today">
+            <img
+              src="images/icon-up.svg"
+              alt="Icon: arrow UP"
+              class="cards-item__today-icon"
+            />
+            <span class="cards-item__today-text">99 Today</span>
+          </div>
+          <!-- /.cards-item__statistic -->
+        </div>
+        <!-- /.cards-item -->
+        <div class="cards-item">
+          <span class="cards-inline cards-inline--instagram"></span>
+          <div class="cards-item__info">
+            <img
+              src="images/icon-instagram.svg"
+              alt="Icon: instagram"
+              class="cards-item__icon"
+            />
+            <span class="cards-item__nickname">@realnathanf</span>
+          </div>
+          <!-- /.cards-item__info -->
+          <span class="cards-item__count">11k</span>
+          <span class="cards-item__followers">Followers</span>
+          <div class="cards-item__today">
+            <img
+              src="images/icon-up.svg"
+              alt="Icon: arrow UP"
+              class="cards-item__today-icon"
+            />
+            <span class="cards-item__today-text">1099 Today</span>
+          </div>
+          <!-- /.cards-item__statistic -->
+        </div>
+        <!-- /.cards-item -->
+        <div class="cards-item">
+          <span class="cards-inline cards-inline--youtube"></span>
+          <div class="cards-item__info">
+            <img
+              src="images/icon-youtube.svg"
+              alt="Icon: youtube"
+              class="cards-item__icon"
+            />
+            <span class="cards-item__nickname">Nathan F.</span>
+          </div>
+          <!-- /.cards-item__info -->
+          <span class="cards-item__count">8239</span>
+          <span class="cards-item__followers">Subscribers</span>
+          <div class="cards-item__today">
+            <img
+              src="images/icon-down.svg"
+              alt="Icon: arrow UP"
+              class="cards-item__today-icon"
+            />
+            <span class="cards-item__today-text">144 Today</span>
+          </div>
+          <!-- /.cards-item__statistic -->
+        </div>
+        <!-- /.cards-item -->
+      </div>
+      <!-- /.cards-top -->
+      <h2 class="cards__title-today">Overview - Today</h2>
+      <div class="cards-diff">
+        <div class="cards-today">
+          <div class="cards-today__info">
+            <span class="cards-today__type">Page Views</span>
+            <span class="cards-today__count">87</span>
+          </div>
+          <!-- /.cards-today__info -->
+          <div class="cards-today__block">
+            <img
+              src="images/icon-facebook.svg"
+              alt="icon-facebook"
+              class="cards-today__icon"
+            />
+            <div class="cards-today__statistic">
+              <img
+                src="images/icon-up.svg"
+                alt="Icon: arrow UP"
+                class="cards-today__statistic-icon"
+              />
+              <span class="cards-today__statistic-text">3%</span>
+            </div>
+            <!-- /.cards-today__statistic -->
+          </div>
+          <!-- /.cards-today__block -->
+        </div>
+        <!-- /.cards-today -->
+        <div class="cards-today">
+          <div class="cards-today__info">
+            <span class="cards-today__type">Page Views</span>
+            <span class="cards-today__count">87</span>
+          </div>
+          <!-- /.cards-today__info -->
+          <div class="cards-today__block">
+            <img
+              src="images/icon-facebook.svg"
+              alt="icon-facebook"
+              class="cards-today__icon"
+            />
+            <div class="cards-today__statistic">
+              <img
+                src="images/icon-up.svg"
+                alt="Icon: arrow UP"
+                class="cards-today__statistic-icon"
+              />
+              <span class="cards-today__statistic-text">3%</span>
+            </div>
+            <!-- /.cards-today__statistic -->
+          </div>
+          <!-- /.cards-today__block -->
+        </div>
+        <!-- /.cards-today -->
+        <div class="cards-today">
+          <div class="cards-today__info">
+            <span class="cards-today__type">Page Views</span>
+            <span class="cards-today__count">87</span>
+          </div>
+          <!-- /.cards-today__info -->
+          <div class="cards-today__block">
+            <img
+              src="images/icon-facebook.svg"
+              alt="icon-facebook"
+              class="cards-today__icon"
+            />
+            <div class="cards-today__statistic">
+              <img
+                src="images/icon-up.svg"
+                alt="Icon: arrow UP"
+                class="cards-today__statistic-icon"
+              />
+              <span class="cards-today__statistic-text">3%</span>
+            </div>
+            <!-- /.cards-today__statistic -->
+          </div>
+          <!-- /.cards-today__block -->
+        </div>
+        <!-- /.cards-today -->
+        <div class="cards-today">
+          <div class="cards-today__info">
+            <span class="cards-today__type">Page Views</span>
+            <span class="cards-today__count">87</span>
+          </div>
+          <!-- /.cards-today__info -->
+          <div class="cards-today__block">
+            <img
+              src="images/icon-facebook.svg"
+              alt="icon-facebook"
+              class="cards-today__icon"
+            />
+            <div class="cards-today__statistic">
+              <img
+                src="images/icon-up.svg"
+                alt="Icon: arrow UP"
+                class="cards-today__statistic-icon"
+              />
+              <span class="cards-today__statistic-text">3%</span>
+            </div>
+            <!-- /.cards-today__statistic -->
+          </div>
+          <!-- /.cards-today__block -->
+        </div>
+        <!-- /.cards-today -->
+        <div class="cards-today">
+          <div class="cards-today__info">
+            <span class="cards-today__type">Page Views</span>
+            <span class="cards-today__count">87</span>
+          </div>
+          <!-- /.cards-today__info -->
+          <div class="cards-today__block">
+            <img
+              src="images/icon-facebook.svg"
+              alt="icon-facebook"
+              class="cards-today__icon"
+            />
+            <div class="cards-today__statistic">
+              <img
+                src="images/icon-up.svg"
+                alt="Icon: arrow UP"
+                class="cards-today__statistic-icon"
+              />
+              <span class="cards-today__statistic-text">3%</span>
+            </div>
+            <!-- /.cards-today__statistic -->
+          </div>
+          <!-- /.cards-today__block -->
+        </div>
+        <!-- /.cards-today -->
+        <div class="cards-today">
+          <div class="cards-today__info">
+            <span class="cards-today__type">Page Views</span>
+            <span class="cards-today__count">87</span>
+          </div>
+          <!-- /.cards-today__info -->
+          <div class="cards-today__block">
+            <img
+              src="images/icon-facebook.svg"
+              alt="icon-facebook"
+              class="cards-today__icon"
+            />
+            <div class="cards-today__statistic">
+              <img
+                src="images/icon-up.svg"
+                alt="Icon: arrow UP"
+                class="cards-today__statistic-icon"
+              />
+              <span class="cards-today__statistic-text">3%</span>
+            </div>
+            <!-- /.cards-today__statistic -->
+          </div>
+          <!-- /.cards-today__block -->
+        </div>
+        <!-- /.cards-today -->
+        <div class="cards-today">
+          <div class="cards-today__info">
+            <span class="cards-today__type">Page Views</span>
+            <span class="cards-today__count">87</span>
+          </div>
+          <!-- /.cards-today__info -->
+          <div class="cards-today__block">
+            <img
+              src="images/icon-facebook.svg"
+              alt="icon-facebook"
+              class="cards-today__icon"
+            />
+            <div class="cards-today__statistic">
+              <img
+                src="images/icon-up.svg"
+                alt="Icon: arrow UP"
+                class="cards-today__statistic-icon"
+              />
+              <span class="cards-today__statistic-text">3%</span>
+            </div>
+            <!-- /.cards-today__statistic -->
+          </div>
+          <!-- /.cards-today__block -->
+        </div>
+        <!-- /.cards-today -->
+        <div class="cards-today">
+          <div class="cards-today__info">
+            <span class="cards-today__type">Page Views</span>
+            <span class="cards-today__count">87</span>
+          </div>
+          <!-- /.cards-today__info -->
+          <div class="cards-today__block">
+            <img
+              src="images/icon-facebook.svg"
+              alt="icon-facebook"
+              class="cards-today__icon"
+            />
+            <div class="cards-today__statistic">
+              <img
+                src="images/icon-up.svg"
+                alt="Icon: arrow UP"
+                class="cards-today__statistic-icon"
+              />
+              <span class="cards-today__statistic-text">3%</span>
+            </div>
+            <!-- /.cards-today__statistic -->
+          </div>
+          <!-- /.cards-today__block -->
+        </div>
+        <!-- /.cards-today -->
+      </div>
+      <!-- /.cards-diff -->
+
+      3% Likes 52 2% Likes 5462 2257% Profile Views 52k 1375% Retweets 117 303%
+      Likes 507 553% Likes 107 19% Total Views 1407 12%
     </main>
   </body>
 </html>

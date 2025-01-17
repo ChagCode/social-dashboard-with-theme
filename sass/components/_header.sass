@@ -1,10 +1,30 @@
 @use '../globals/functions' as *
-
+// body
+//   position: relative
+// .inline
+//   position: absolute
+//   display: block
+//   top: 0
+//   left: 0
+//   right: 0
+//   width: 100%
+//   height: rem(280)
+//   background: var(--dark-top-bg)
+//   z-index: -1
 .header
+  // position: absolute
+  // top: 0
+  // left: 0
+  // right: 0
   display: flex
   justify-content: space-between
   align-items: center
+  margin-top: rem(30)
+  margin-bottom: rem(40)
   &-title
     &__name
       font-size: rem(28)
       font-weight: bold
+      margin-bottom: rem(8)
+    &__total-followers
+      color: var(--toggle-bg-light)
