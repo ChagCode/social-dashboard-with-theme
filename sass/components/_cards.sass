@@ -21,6 +21,7 @@
   &-top
     display: flex
     justify-content: space-between
+    margin-bottom: rem(60)
   &-item
     position: relative
     display: flex
@@ -64,24 +65,49 @@
       &-text
         font-size: rem(12)
         color: var(--limegreen)
+  &__title-today
+    font-size: rem(24)
+    font-weight: bold
+    margin-bottom: rem(30)
+  &-diff
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
   &-today
     display: flex
     justify-content: space-between
     width: rem(240)
-    height: rem(170)
+    height: rem(150)
     background-color: var(--dark-card-bg)
     border-radius: rem(6)
     padding: rem(35) rem(27)
     overflow: hidden
+    margin-bottom: rem(30)
     &:hover
       filter: brightness(150%)
     &__info
       display: flex
       flex-direction: column
       justify-content: space-between
+    &__type
+      color: var(--dark-text1)
+    &__count
+      color: var(--dark-text2)
+      font-size: rem(35)
+      font-weight: bold
     &__block
       display: flex
       flex-direction: column
       justify-content: space-between
+      align-items: center
+    &__statistic
+      display: flex
+      align-items: center
+      &-icon
+        margin-right: rem(5)
+      &-text
+        color: var(--limegreen)
+        font-size: rem(12)
 
-      // обернуть img icon в div
+.arrow-down
+  color: var(--brightred)
