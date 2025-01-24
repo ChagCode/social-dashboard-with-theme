@@ -1,0 +1,43 @@
+/* xl-размер (>=1200px) */
+/* CSS для >=1200px */
+
+/* lg-размер (<=1055px) */
+@media (max-width: rem(1055))
+  /* CSS для ширины от 992px до 1055px */
+  .container
+    max-width: 940px
+  .cards
+    &-top
+      flex-wrap: wrap
+    &-item
+      flex-basis: 48%
+      margin-right: rem(10)
+      margin-bottom: rem(20)
+    &-diff
+      flex-wrap: wrap
+    &-today
+      flex-basis: 48%
+      margin-right: rem(10)
+
+/* xs-размер (<=600px) */
+@media (max-width: rem(599))
+  /* CSS для ширины до 599px (включительно) */
+  .header
+    flex-wrap: wrap
+    flex-direction: column
+    &-title
+      flex-basis: 100%
+      margin-bottom: rem(20)
+    &-toggle
+      align-self: end
+  .toggle
+    &__wrapper
+      width: rem(54)
+  .cards
+    &-top
+      &--mb-2
+        margin-bottom: rem(20)
+    &-item
+      flex-basis: 100%
+    &-today
+      flex-basis: 100%

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-size: 100%;
   box-sizing: border-box;
@@ -43,7 +44,6 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-top: 1.875rem;
   margin-bottom: 2.5rem;
 }
@@ -65,6 +65,7 @@ body {
   position: relative;
   grid-column: 2/3;
   grid-row: 1/2;
+  width: 4rem;
   height: 1.5rem;
 }
 .toggle__input {
@@ -270,4 +271,56 @@ label[for=light] {
 }
 .cards-today__statistic-text--down {
   color: var(--brightred);
+}
+
+/* xl-размер (>=1200px) */
+/* CSS для >=1200px */
+/* lg-размер (<=1055px) */
+@media (max-width: 65.9375rem) {
+  /* CSS для ширины от 992px до 1055px */
+  .container {
+    max-width: 940px;
+  }
+  .cards-top {
+    flex-wrap: wrap;
+  }
+  .cards-item {
+    flex-basis: 48%;
+    margin-right: 0.625rem;
+    margin-bottom: 1.25rem;
+  }
+  .cards-diff {
+    flex-wrap: wrap;
+  }
+  .cards-today {
+    flex-basis: 48%;
+    margin-right: 0.625rem;
+  }
+}
+/* xs-размер (<=600px) */
+@media (max-width: 37.4375rem) {
+  /* CSS для ширины до 599px (включительно) */
+  .header {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .header-title {
+    flex-basis: 100%;
+    margin-bottom: 1.25rem;
+  }
+  .header-toggle {
+    align-self: end;
+  }
+  .toggle__wrapper {
+    width: 3.375rem;
+  }
+  .cards-top--mb-2 {
+    margin-bottom: 1.25rem;
+  }
+  .cards-item {
+    flex-basis: 100%;
+  }
+  .cards-today {
+    flex-basis: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
