@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <span class="inline-top"></span>
@@ -28,14 +28,14 @@
       </div>
       <!-- /.header-title -->
 
-      <fieldset class="header-toggle toggle" role="radiogroup">
+      <div class="toggle header-toggle" role="radiogroup">
+        <legend for="dark">Dark Mode</legend>
         <div class="toggle__wrapper">
-          <input class="toggle__input" type="radio" name="theme" id="dark" />
           <input
             class="toggle__input"
             type="radio"
             name="theme"
-            id="system"
+            id="dark"
             checked
           />
           <input class="toggle__input" type="radio" name="theme" id="light" />
@@ -43,14 +43,12 @@
           <span aria-hidden="true" class="toggle__button"></span>
         </div>
         <!-- /.toggle__wrapper -->
-        <label for="dark">Dark</label>
-        <label for="system">System</label>
-        <label for="light">Light</label>
-      </fieldset>
+        <!-- <label for="light">Light</label> -->
+      </div>
     </header>
     <main>
       <section class="cards container">
-        <div class="cards-top cards-top--mb-2">
+        <div class="cards-top">
           <div class="cards-item">
             <span class="cards-inline cards-inline--facebook"></span>
             <div class="cards-item__info">

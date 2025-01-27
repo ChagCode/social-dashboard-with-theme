@@ -29,13 +29,13 @@
     align-items: center
     width: rem(240)
     height: rem(216)
-    background-color: var(--dark-card-bg)
+    background-color: var(--card-bg)
     border-radius: rem(6)
     padding-top: rem(35)
     padding-button: rem(25)
     overflow: hidden
     &:hover
-      filter: brightness(150%)
+      filter: brightness(var(--brightness))
     &__info
       display: flex
       align-items: center
@@ -43,16 +43,16 @@
     &__icon
       margin-right: rem(10)
     &__nickname
-      color: var(--dark-text1)
+      color: var(--text-one)
       font-size: rem(12)
       font-weight: bold
     &__count
-      color: var(--dark-text2)
+      color: var(--text-two)
       font-size: rem(62)
       font-weight: bold
       margin-bottom: rem(5)
     &__followers
-      color: var(--dark-text1)
+      color: var(--text-one)
       font-size: rem(14)
       text-transform: uppercase
       letter-spacing: rem(5.5)
@@ -81,21 +81,21 @@
     justify-content: space-between
     width: rem(240)
     height: rem(150)
-    background-color: var(--dark-card-bg)
+    background-color: var(--card-bg)
     border-radius: rem(6)
     padding: rem(35) rem(27)
     overflow: hidden
     margin-bottom: rem(30)
     &:hover
-      filter: brightness(150%)
+      filter: brightness(var(--brightness))
     &__info
       display: flex
       flex-direction: column
       justify-content: space-between
     &__type
-      color: var(--dark-text1)
+      color: var(--text-one)
     &__count
-      color: var(--dark-text2)
+      color: var(--text-two)
       font-size: rem(35)
       font-weight: bold
     &__block
